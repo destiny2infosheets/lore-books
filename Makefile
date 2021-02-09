@@ -7,16 +7,19 @@ all: books
 	# target dependencies.
 	$(MAKE) epubs
 
-manifest.json:
+tmp out:
+	mkdir $@
+
+tmp/manifest.json: | tmp
 	path="$$(curl --silent --header 'X-API-Key: $(API_KEY)' https://www.bungie.net/Platform/Destiny2/Manifest/ \
 	  | jq --raw-output .Response.jsonWorldContentPaths.en)"; \
 	url="https://www.bungie.net$${path}"; \
 	curl --silent --header 'X-API-Key: $(API_KEY)' --header 'Content-Type: application/json' "$${url}" | jq > $@
 
 .PHONY: books
-books: manifest.json extract_books.jq
-	jq -f extract_books.jq manifest.json --raw-output | while read hash; do \
-		jq -f extract_books.jq manifest.json --arg book $${hash} > book_$${hash}.json; \
+books: tmp/manifest.json extract_books.jq
+	jq -f extract_books.jq tmp/manifest.json --raw-output | while read hash; do \
+		jq -f extract_books.jq tmp/manifest.json --arg book $${hash} > tmp/book_$${hash}.json; \
 	done
 
 %.png: %.json
@@ -26,13 +29,14 @@ books: manifest.json extract_books.jq
 	jq --raw-output -f format_book.jq $< > $@
 
 .PHONY: images texts epubs
-images: $(patsubst %.json,%.png,$(wildcard book_*.json))
-texts: $(patsubst %.json,%.txt,$(wildcard book_*.json))
+images: $(patsubst %.json,%.png,$(wildcard tmp/book_*.json))
+texts: $(patsubst %.json,%.txt,$(wildcard tmp/book_*.json))
 
-epubs: images texts $(wildcard book_*.json) format_book.jq
+epubs: images texts $(wildcard tmp/book_*.json) format_book.jq | out
+	cd tmp && \
 	for file in book_*.json; do \
-		 pandoc $${file%.json}.txt -o "$$(jq --raw-output '.title' $${file}).epub"; \
+		 pandoc $${file%.json}.txt -o "../out/$$(jq --raw-output '.title' $${file}).epub"; \
 	done
 
 clean:
-	rm *.json *.txt *.png *.epub || true
+	rm -r tmp out || true
