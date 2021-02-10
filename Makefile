@@ -16,7 +16,7 @@ tmp out:
 	mkdir $@
 
 ################################################################################
-# Stage 1
+# Stage 1: fetch the manifest and extract lore books as separate files.
 ################################################################################
 
 tmp/manifest.json: | tmp
@@ -45,7 +45,7 @@ tmp/books.marker: tmp/books.json
 books: tmp/books.marker
 
 ################################################################################
-# Stage 1
+# Stage 2: convert each book into epub. Highly parallelizable.
 ################################################################################
 
 %.png: %.book.json
