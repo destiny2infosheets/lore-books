@@ -25,8 +25,14 @@ tmp/books.json: tmp/manifest.json extract_books.jq
 
 tmp/books.marker: tmp/books.json
 	jq '.[] | .hash' --raw-output $< | while read hash; do \
-		jq ".[] | select(.hash == $${hash})" $< > tmp/book_$${hash}.json; \
-		mv tmp/book_$${hash}.json "tmp/$$(jq --raw-output '.makeSafeTitle' tmp/book_$${hash}.json).book.json"; \
+		temp="tmp/book_$${hash}.json"; \
+		jq ".[] | select(.hash == $${hash})" $< > "$${temp}"; \
+		target="tmp/$$(jq --raw-output '.makeSafeTitle' "$${temp}").book.json"; \
+		if [ -r "$${target}" ] && cmp -s "$${temp}" "$${target}"; then \
+			rm "$${temp}"; \
+		else \
+			mv -f "$${temp}" "$${target}"; \
+		fi \
 	done
 	touch $@
 
