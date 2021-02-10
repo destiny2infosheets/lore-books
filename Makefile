@@ -36,6 +36,9 @@ tmp/books.marker: tmp/books.json
 	done
 	touch $@
 
+.PHONY: books
+books: tmp/books.marker
+
 ################################################################################
 # Stage 1
 ################################################################################
@@ -46,12 +49,16 @@ tmp/books.marker: tmp/books.json
 %.txt: %.book.json format_book.jq
 	jq --raw-output -f format_book.jq '$<' > '$@'
 
+%.md: %.txt
+	awk 'BEGIN {i=0} i == 2 {print} /^---$$/ {i++}' $< > $@
+
 out/%.epub: tmp/%.txt tmp/%.png | out
-	cd tmp && pandoc '$(patsubst tmp/%,%,$<)' -o '../$(patsubst tmp/%,%,$@)'
+	cd tmp && pandoc '$(patsubst tmp/%,%,$<)' -o '../$@'
 
 .PHONY: images texts epubs
 images: $(patsubst %.book.json,%.png,$(wildcard tmp/*.book.json))
 texts: $(patsubst %.book.json,%.txt,$(wildcard tmp/*.book.json))
+texts: $(patsubst %.book.json,%.md,$(wildcard tmp/*.book.json))
 epubs: images $(patsubst tmp/%.book.json,out/%.epub,$(wildcard tmp/*.book.json))
 
 clean:
