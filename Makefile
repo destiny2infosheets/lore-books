@@ -7,6 +7,11 @@ all: tmp/books.marker
 	# target dependencies.
 	$(MAKE) epubs
 
+.PHONY: update
+update:
+	rm tmp/manifest.json || true
+	$(MAKE)
+
 tmp out:
 	mkdir $@
 
