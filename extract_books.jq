@@ -9,6 +9,7 @@ def is_book($root): ((.children.records | length) > 0) and (until(. == null or .
 	| {
 	hash: .hash,
 	title: .displayProperties.name,
+	makeSafeTitle: .displayProperties.name | gsub("[^a-zA-Z0-9]"; "_"),
 	cover: (.displayProperties.iconSequences | last | .frames | first),
 	chapters: [
 		.children.records[]

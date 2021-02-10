@@ -7,7 +7,7 @@ creator:
   text: Bungie
 date: \(now | strftime("%Y-%m-%d"))
 lang: en
-cover-image: book_\(.hash).png
+cover-image: \(.makeSafeTitle).png
 ---
 
 " + ([.chapters[] | 

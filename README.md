@@ -12,4 +12,4 @@ epub format.
 
 ## Usage
 
-Clone this repository and run `make`. 
+Clone this repository and run `make -j 48`. 
