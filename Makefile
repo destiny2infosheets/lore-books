@@ -16,10 +16,13 @@ tmp/manifest.json: | tmp
 	url="https://www.bungie.net$${path}"; \
 	curl --silent --header 'X-API-Key: $(API_KEY)' --header 'Content-Type: application/json' "$${url}" | jq > $@
 
+tmp/books.json: tmp/manifest.json extract_books.jq
+	jq -f extract_books.jq tmp/manifest.json > $@
+
 .PHONY: books
-books: tmp/manifest.json extract_books.jq
-	jq -f extract_books.jq tmp/manifest.json --raw-output | while read hash; do \
-		jq -f extract_books.jq tmp/manifest.json --arg book $${hash} > tmp/book_$${hash}.json; \
+books: tmp/books.json
+	jq '.[] | .hash' --raw-output $< | while read hash; do \
+		jq ".[] | select(.hash == $${hash})" $< > tmp/book_$${hash}.json; \
 	done
 
 %.png: %.json

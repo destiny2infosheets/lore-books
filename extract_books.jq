@@ -4,11 +4,9 @@ def is_book($root): ((.children.records | length) > 0) and (until(. == null or .
 	else null end) 
 	| . != null);
 
-def list_book_hashes: . as $root | .DestinyPresentationNodeDefinition[]
-	| select(is_book($root)) | .hash | tostring;
-
-def make_book(hash): . as $root | .DestinyPresentationNodeDefinition[hash | tostring]
-| {
+[. as $root | .DestinyPresentationNodeDefinition[]
+	| select(is_book($root))
+	| {
 	hash: .hash,
 	title: .displayProperties.name,
 	cover: (.displayProperties.iconSequences | last | .frames | first),
@@ -22,10 +20,6 @@ def make_book(hash): . as $root | .DestinyPresentationNodeDefinition[hash | tost
 			text: .displayProperties.description,
 		  }
 	]
-};
+}]
 
-if $ARGS.named | has("book") then
-	make_book($ARGS.named.book)
-else
-	list_book_hashes
-end
+
