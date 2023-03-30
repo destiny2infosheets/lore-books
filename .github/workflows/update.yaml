@@ -30,7 +30,7 @@ jobs:
           make all_books
           make images -j 50
           make epubs -j 50
-          rm books/*.md && make md -j 50
+          rm books/*.md || true; make md -j 50
           make books.zip
       - name: Commit updated books.json and markdown files
         run: |
