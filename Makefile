@@ -60,12 +60,15 @@ books/%.md: tmp/%.book.json format_book_to_md.jq
 out/%.epub: tmp/%.txt tmp/%.png | out
 	cd tmp && pandoc '$(patsubst tmp/%,%,$<)' -o '../$@'
 
+books/index.md: books.json | books
+	jq --raw-output -f generate_index_md.jq '$<' > '$@'
+
 .PHONY: images texts epubs md
 images: $(patsubst %.book.json,%.png,$(wildcard tmp/*.book.json))
 texts: $(patsubst %.book.json,%.txt,$(wildcard tmp/*.book.json))
 texts: $(patsubst %.book.json,%.md,$(wildcard tmp/*.book.json))
 epubs: images $(patsubst tmp/%.book.json,out/%.epub,$(wildcard tmp/*.book.json))
-md: $(patsubst tmp/%.book.json,books/%.md,$(wildcard tmp/*.book.json)) | books
+md: books/index.md $(patsubst tmp/%.book.json,books/%.md,$(wildcard tmp/*.book.json)) | books
 
 books.zip: epubs
 	cd out && zip ../$@ *.epub

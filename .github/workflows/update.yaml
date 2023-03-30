@@ -45,6 +45,7 @@ jobs:
         run: |
           mkdir _site
           mv books.zip _site/
+          cp books/*.md _site/
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
