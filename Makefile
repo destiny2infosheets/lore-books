@@ -12,7 +12,7 @@ update:
 	rm tmp/manifest.json || true
 	$(MAKE)
 
-tmp out:
+tmp out books:
 	mkdir $@
 
 ################################################################################
@@ -41,8 +41,8 @@ tmp/books.marker: books.json
 	done
 	touch $@
 
-.PHONY: books
-books: tmp/books.marker
+.PHONY: all_books
+all_books: tmp/books.marker
 
 ################################################################################
 # Stage 2: convert each book into epub. Highly parallelizable.
@@ -54,17 +54,18 @@ books: tmp/books.marker
 %.txt: %.book.json format_book.jq
 	jq --raw-output -f format_book.jq '$<' > '$@'
 
-%.md: %.txt
-	awk 'BEGIN {i=0} i == 2 {print} /^---$$/ {i++}' $< > $@
+books/%.md: tmp/%.book.json format_book_to_md.jq
+	jq --raw-output -f format_book_to_md.jq '$<' > '$@'
 
 out/%.epub: tmp/%.txt tmp/%.png | out
 	cd tmp && pandoc '$(patsubst tmp/%,%,$<)' -o '../$@'
 
-.PHONY: images texts epubs
+.PHONY: images texts epubs md
 images: $(patsubst %.book.json,%.png,$(wildcard tmp/*.book.json))
 texts: $(patsubst %.book.json,%.txt,$(wildcard tmp/*.book.json))
 texts: $(patsubst %.book.json,%.md,$(wildcard tmp/*.book.json))
 epubs: images $(patsubst tmp/%.book.json,out/%.epub,$(wildcard tmp/*.book.json))
+md: $(patsubst tmp/%.book.json,books/%.md,$(wildcard tmp/*.book.json)) | books
 
 books.zip: epubs
 	cd out && zip ../$@ *.epub
