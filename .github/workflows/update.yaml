@@ -41,13 +41,17 @@ jobs:
             git commit -m 'Update books.json'
             git push
           fi
-      - name: Prepare a directory for publishing
-        run: |
-          mkdir _site
-          mv books.zip _site/
-          cp books/*.md _site/
       - name: Setup Pages
         uses: actions/configure-pages@v2
+      - name: Prepare the input for jekyll
+        run: |
+          mkdir pages
+          cp books.zip books/*.md pages/
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./pages
+          destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
   publish:
