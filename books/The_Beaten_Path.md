@@ -1,0 +1,5 @@
+# The Beaten Path
+
+© Bungie
+
+
