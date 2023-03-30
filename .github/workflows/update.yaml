@@ -1,0 +1,60 @@
+name: Compile and publish lore books
+
+on:
+  push:
+    branches: ["master"]
+    paths:
+      - Makefile
+      - '*.jq'
+  workflow_dispatch:
+  schedule:
+    - cron: "50 20 2 * *"
+
+jobs:
+  compile:
+    permissions:
+      id-token: write
+      pages: write
+      contents: write
+    concurrency:
+      group: "automation"
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Compile
+        run: |
+          make
+          make books.zip
+      - name: Commit updated books.json
+        run: |
+          git config user.name automation
+          git config user.email github-actions@github.com
+          git add books.json
+          if ! git diff-index --quiet HEAD; then
+            git commit -m 'Update books.json'
+            git push
+          fi
+      - name: Prepare a directory for publishing
+        run: |
+          mkdir _site
+          mv books.zip _site/
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+  publish:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      pages: write
+    needs: compile
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+

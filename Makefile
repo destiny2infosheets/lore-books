@@ -25,10 +25,10 @@ tmp/manifest.json: | tmp
 	url="https://www.bungie.net$${path}"; \
 	curl --silent --header 'X-API-Key: $(API_KEY)' --header 'Content-Type: application/json' "$${url}" | jq > $@
 
-tmp/books.json: tmp/manifest.json extract_books.jq
+books.json: tmp/manifest.json extract_books.jq
 	jq -f extract_books.jq tmp/manifest.json > $@
 
-tmp/books.marker: tmp/books.json
+tmp/books.marker: books.json
 	jq '.[] | .hash' --raw-output $< | while read hash; do \
 		temp="tmp/book_$${hash}.json"; \
 		jq ".[] | select(.hash == $${hash})" $< > "$${temp}"; \
@@ -65,6 +65,9 @@ images: $(patsubst %.book.json,%.png,$(wildcard tmp/*.book.json))
 texts: $(patsubst %.book.json,%.txt,$(wildcard tmp/*.book.json))
 texts: $(patsubst %.book.json,%.md,$(wildcard tmp/*.book.json))
 epubs: images $(patsubst tmp/%.book.json,out/%.epub,$(wildcard tmp/*.book.json))
+
+books.zip: epubs
+	cd out && zip ../$@ *.epub
 
 clean:
 	rm -r tmp out || true
