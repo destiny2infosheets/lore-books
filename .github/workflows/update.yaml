@@ -8,7 +8,7 @@ on:
       - '*.jq'
   workflow_dispatch:
   schedule:
-    - cron: "50 20 2 * *"
+    - cron: "50 20 * * 2"
 
 jobs:
   compile:
