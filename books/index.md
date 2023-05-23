@@ -52,6 +52,7 @@ Download all books as EPUB: [books.zip](https://destiny2infosheets.github.io/lor
  * [Our Allies](Our_Allies.md)
  * [Pathfinding](Pathfinding.md)
  * [Persona](Persona.md)
+ * [Purpose](Purpose.md)
  * [Quintessence](Quintessence.md)
  * [Regarding Stasis](Regarding_Stasis.md)
  * [Revelation](Revelation.md)
