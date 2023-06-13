@@ -80,13 +80,89 @@ Ikora sighs, then turns to Osiris. "Your flare for educating others is returning
 
 Osiris smirks. "Come, walk with me. We will discuss this unifying theory of yours."
 
-## Classified
+## III. Legacy
 
-Keep it secret.  Keep it safe.
+A soft, simulated whimper echoes through the workshop as Archie rests his head on Ana's shoulder. They sit together in front of the harness holding up Rasputin's erstwhile Exo frame, a lifeless effigy of cables and steel.
 
-## Classified
+"I know, buddy," Ana says quietly. "I miss him too."
 
-Keep it secret.  Keep it safe.
+After Rasputin's sacrifice, Ana had arranged for the Exo frame to be transferred from the H.E.L.M. to her workspace in the Tower. At the time, she had told herself that keeping the frame in storage would have been a waste; that its technological advancements could prove useful to other Exos in the future. Honestly, though, she simply wasn't ready to let go.
+
+Nevertheless, she signed herself up for a new task, and what better way to cope with grief than by staying busy? So she had made good on her word, tinkering with the frame to reverse-engineer its more convoluted components.
+
+That was, until she heard that Titan, like Mars before it, had suddenly reappeared. And Sloane along with it. A warrior in need of a war; a weapon in search of a target. Not unlike the Warmind. The thought kept Ana from fully burying herself in her work.
+
+For now, she wraps her arm around Archie as her thoughts drift to all the detritus left in Rasputin's wake. Rasputin had assembled an arsenal of unfathomable scale. Remnants from thousands of Warsats strewn across the solar system, prototype weaponry never to be completed, stratagems and simulations forever forgotten.
+
+And yet, sitting here in the shadow of his sacrifice, Ana finds that she wants to remember him by the one thing not built for war. A canine AI, created for no other purpose than companionship. One that has made a home for himself in the Tower, greeting everyone he meets on his daily walks.
+
+In the end, Rasputin's legacy was not the war he waged, but the lives he sought to protect. The notion brings a smile to Ana's lips. It's what distinguished him from Xivu Arath. And Ana hopes that Sloane can realize the same holds true for her.
+
+Ana looks to the Exo frame one last time before rising to her feet and pats the dog on his head. He happily wags his tail in response.
+
+"Come on, Archie," she says as she reaches for her comms unit. "Let's go for a walk."
+
+## IV. Tether
+
+Eris let her eyes wander over the interior of the Derelict, wondering if Drifter had hastily tidied it before her arrival. Unprecedented, but he could still surprise her. They sat together as they always did when she came to speak to him face to face. 
+
+Drifter sighed and shook his head, flicking his coin absently between his fingers 
+
+"Sloane's in a bad way," he said. Eris nodded. 
+
+"And you believe my speaking to her will be beneficial," she replied. Drifter shrugged. 
+
+"Helped a few people already, didn't it?" 
+
+Eris considered this. 
+
+"It should be you," she finally answered. Drifter laughed at this but fell silent when her expression remained unchanged. 
+
+"Me?" His confusion was genuine. "Why would she trust me?" 
+
+"Trust is built, Drifter," Eris said, "and you have taken the first step." 
+
+He was pensive. The movement of the coin over his knuckles stopped. She continued. 
+
+"I have found," she said, her words measured, "that one is grounded by honesty. Not only in oneself, but with those around you." 
+
+He heaved a slow, hard breath. 
+
+"I don't know if I can," he said, his voice small. 
+
+"Yes. Honesty is a supplication," Eris said. "We ask to be seen. We are made vulnerable… but it is necessary to be treated with care." 
+
+Her explanation was met with one of his rasping chuckles. Drifter leaned back in his seat, arms crossed. He held his coin tightly between a thumb and forefinger. 
+
+"You always make somethin' so easy sound so freaky, Moondust," he said. Eris ignored this. 
+
+"Tell her what you told me," she said more simply. "The Deputy Commander's trust will not come without reciprocity." 
+
+Drifter fell quiet, looking down. She could hear his breath and see the strained shiver of his fingers where he clutched the coin. Eris reached out and placed a hand on his arm. He was tense to trembling, but her touch was light. Quiet. Comforting.  
+
+He placed his hand over her own. 
+
+"Y'know, some days I still wake up scared," Drifter said softly. "Even when I can't remember my dreams." 
+
+"That is what it is to survive." 
+
+There was a gentleness to Eris's voice. He nodded, then looked up and met her gaze. 
+
+"Hey," Drifter said. "You find that joy yet?" 
+
+"Soon," Eris answered. "Joy is built… but I have taken the first step." 
+
+Drifter withdrew his hand. After a moment, she did too. Eris stood, and Drifter's eyes followed her.  
+
+"Consider my counsel, Germaine." 
+
+She knew he would. Drifter let the silence linger. 
+
+"That's not my name," he said at last.  
+
+"That is what you let them call you." 
+
+It was a small link to his past. A link to a life he had picked for himself. He nodded slowly, holding her gaze. He would let her call him that too.
 
 ## Classified
 
