@@ -65,6 +65,7 @@ Download all books as EPUB: [books.zip](https://destiny2infosheets.github.io/lor
  * [Stolen Intelligence](Stolen_Intelligence.md)
  * [Tales of the Forgotten – Vol. 1](Tales_of_the_Forgotten___Vol__1.md)
  * [Tales of the Forgotten – Vol. 2](Tales_of_the_Forgotten___Vol__2.md)
+ * [Tales of the Forgotten – Vol. 3](Tales_of_the_Forgotten___Vol__3.md)
  * [The Awoken of the Reef](The_Awoken_of_the_Reef.md)
  * [The Beaten Path](The_Beaten_Path.md)
  * [The Black Armory Papers](The_Black_Armory_Papers.md)
