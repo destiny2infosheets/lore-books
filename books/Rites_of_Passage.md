@@ -352,7 +352,7 @@ Saint's fist loosened by a fraction. "You will bring her back, and I give my wor
 
 "You are Hive, and you know suffering. You come from death. It is nothing to you."
 
-"But I think, maybe, you do now know how it feels to be helpless."
+"But I think, maybe, you do not know how it feels to be helpless."
 
 "I will teach you."
 
