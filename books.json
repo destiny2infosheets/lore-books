@@ -2972,6 +2972,62 @@
     ]
   },
   {
+    "hash": 1907007852,
+    "title": "Gifts and Bargains",
+    "makeSafeTitle": "Gifts_and_Bargains",
+    "cover": "/common/destiny2_content/icons/eb98ebd06383203988e4fea76ffe69c2.png",
+    "chapters": [
+      {
+        "title": "Classified",
+        "text": "Keep it secret.  Keep it safe."
+      },
+      {
+        "title": "Classified",
+        "text": "Keep it secret.  Keep it safe."
+      },
+      {
+        "title": "Classified",
+        "text": "Keep it secret.  Keep it safe."
+      },
+      {
+        "title": "Classified",
+        "text": "Keep it secret.  Keep it safe."
+      }
+    ]
+  },
+  {
+    "hash": 1100359214,
+    "title": "Dragonslayers",
+    "makeSafeTitle": "Dragonslayers",
+    "cover": "/common/destiny2_content/icons/9c69c3ecdbe7282ec52795729394dede.png",
+    "chapters": [
+      {
+        "title": "Classified",
+        "text": "Keep it secret.  Keep it safe."
+      },
+      {
+        "title": "Classified",
+        "text": "Keep it secret.  Keep it safe."
+      },
+      {
+        "title": "Classified",
+        "text": "Keep it secret.  Keep it safe."
+      },
+      {
+        "title": "Classified",
+        "text": "Keep it secret.  Keep it safe."
+      },
+      {
+        "title": "Classified",
+        "text": "Keep it secret.  Keep it safe."
+      },
+      {
+        "title": "Classified",
+        "text": "Keep it secret.  Keep it safe."
+      }
+    ]
+  },
+  {
     "hash": 1023088788,
     "title": "The Forsaken Prince",
     "makeSafeTitle": "The_Forsaken_Prince",
@@ -3220,6 +3276,10 @@
       {
         "title": "Fourteenth Wish",
         "text": "A wish for love and support."
+      },
+      {
+        "title": "Fifteenth Wish",
+        "text": "\"This one you shall cherish.\" —Riven of a Thousand Voices"
       }
     ]
   },

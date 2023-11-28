@@ -58,3 +58,7 @@ A wish for the means to feed an addiction.
 
 A wish for love and support.
 
+## Fifteenth Wish
+
+"This one you shall cherish." —Riven of a Thousand Voices
+
