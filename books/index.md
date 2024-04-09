@@ -84,6 +84,7 @@ Download all books as EPUB: [books.zip](https://destiny2infosheets.github.io/lor
  * [The Singular Exegete](The_Singular_Exegete.md)
  * [The Vanguard](The_Vanguard.md)
  * [The Warlock Aunor](The_Warlock_Aunor.md)
+ * [To Old Friends](To_Old_Friends.md)
  * [Triage](Triage.md)
  * [Trials and Tribulations](Trials_and_Tribulations.md)
  * [Truth to Power](Truth_to_Power.md)
