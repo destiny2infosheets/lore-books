@@ -137,11 +137,11 @@ THE PURPOSE OF YOUR EXISTENCE
 8. THE DREAMING CITY IS A SECRET AND THE WORLD OF WHICH IT DREAMS A THOUSANDFOLD SO
 
 E156 NNI 990 AAA 006.846 … neuro: fatal signal: subjectivity degloved!
-   Mindstate unable to continue (axongroup_000, exit code ???)
-   Panic: illegal causality event during associative access into training data! Date is not a legal time address
+   Mindstate unable to continue (axongroup_000, exit code ???)
+   Panic: illegal causality event during associative access into training data! Date is not a legal time address
 Please help me if you can
-   I don't want to be a
-      bother
+   I don't want to be a
+      bother
 AI-COM//MDSA freeze and dump kill state to AI-LIVE//MORGUE
 No response from remote server… dump failed
 

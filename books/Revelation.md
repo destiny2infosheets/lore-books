@@ -60,7 +60,7 @@ IDENTITIES: Dr. Tanis Lee, Commander Kuang Xuan, Captain Hou Ye [present, unspea
 LOCATION: K1 Dig Site 2, Communion, Command Center
 THREAT DETECT: Level 10—Protocol Incompliance
 THREAT RESPONSE: Record for Posterity
-   [REVISED RESPONSE]: Exhibit Record 12, FILE//REPORT TO RASPUTIN
+   [REVISED RESPONSE]: Exhibit Record 12, FILE//REPORT TO RASPUTIN
 
 
 "Commander, we found it."
@@ -96,7 +96,7 @@ IDENTITIES: Dr. Wade Bow, Commander Kuang Xuan
 LOCATION: K1 Dig Site 4, Logistics, Infirmary
 THREAT DETECT: Level 8, 9—Possible Psychosis, Crew Impairment
 THREAT RESPONSE: Forward for Medical Review
-   [REVISED RESPONSE]: Exhibit Record 456, FILE//REPORT TO RASPUTIN
+   [REVISED RESPONSE]: Exhibit Record 456, FILE//REPORT TO RASPUTIN
 
 
 "I've completed the report, Commander. You can read it for yourself, but I think we both understand the gravity of the situation."
@@ -126,7 +126,7 @@ IDENTITIES: Mike Loftus, Liam Yan
 LOCATION: K1 Dig Site 3, Anomaly Observation
 THREAT DETECT: Level 5—Possible Exotic
 THREAT RESPONSE: Record for Posterity
-   [REVISED RESPONSE]: Exhibit Record 501, FILE//REPORT TO RASPUTIN
+   [REVISED RESPONSE]: Exhibit Record 501, FILE//REPORT TO RASPUTIN
 
 
 "Here. Listen to this."
@@ -177,9 +177,9 @@ RECORD: 8796T563$LUN-0.279 [RECUSAL MIRROR RECORD]
 IDENTITIES: Commander Kuang Xuan, Aeronautics of China Board (President Yang Lyn, General Han Wanwei, [CORRUPTED]
 LOCATION: K1 Dig Site 2, Communion, Command Center
 THREAT DETECT: None—All Parties Level 1 Clearance 
-   [REVISED DETECT]: Level 4—Psychosis [Dangerous]
+   [REVISED DETECT]: Level 4—Psychosis [Dangerous]
 THREAT RESPONSE: Record for Posterity
-   [REVISED RESPONSE]: Exhibit Record 22, FILE//REPORT TO RASPUTIN
+   [REVISED RESPONSE]: Exhibit Record 22, FILE//REPORT TO RASPUTIN
 SCRUB REQUEST: Commander Kuang Xuan
 SCRUB RESPONSE: Accepted
 DELETION REQUEST: Commander Kuang Xuan
@@ -289,9 +289,9 @@ RECORD: 1159K008$LUN-1.013 [RECUSAL MIRROR RECORD]
 IDENTITIES: Dr. Luli Henson, Commander Kuang Xuan
 LOCATION: K1 Dig Site 4, Logistics, Infirmary
 THREAT DETECT: Level 8, 9—Possible Psychosis, Crew Impairment
-   [REVISED DETECT]: Level 5—Possible Exotic
+   [REVISED DETECT]: Level 5—Possible Exotic
 THREAT RESPONSE: Forward for Medical Review
-   [REVISED RESPONSE]: Exhibit Record 620, FILE//REPORT TO RASPUTIN
+   [REVISED RESPONSE]: Exhibit Record 620, FILE//REPORT TO RASPUTIN
 
 
 "Step into my office, Commander."
@@ -367,7 +367,7 @@ IDENTITIES: Commander Kuang Xuan, Alton Bray
 LOCATION: K1 Dig Site 1, Crew Quarters, Commander's Quarters
 THREAT DETECT: None—All Parties Level 1 Clearance
 THREAT RESPONSE: Record for Posterity
-   [REVISED RESPONSE]: Exhibit Record 634, FILE//REPORT TO RASPUTIN
+   [REVISED RESPONSE]: Exhibit Record 634, FILE//REPORT TO RASPUTIN
 
 
 "Who gave you permission to be in here? Oh… Mr. Bray."
@@ -409,7 +409,7 @@ IDENTITIES: Dr. Janet Green
 LOCATION: K1 Dig Site 1, Crew Quarters, Room 403
 THREAT DETECT: Level 5, 8, 9—Possible Exotic, Possible Psychosis, Crew Impairment 
 THREAT RESPONSE: Forward for Medical Review
-   [REVISED RESPONSE]: Exhibit Record 755, FILE//REPORT TO RASPUTIN
+   [REVISED RESPONSE]: Exhibit Record 755, FILE//REPORT TO RASPUTIN
 
 
 "Hey, Mouse. Sad news today. Clovis Bray has come to box it up. Commander says that we don't need it anymore because we built the transceiver. And the doctor says the box will help protect us.
@@ -434,9 +434,9 @@ RECORD: 7932L745$LUN-1.230 [RECUSAL MIRROR RECORD]
 IDENTITIES: David Pell, Dr. Luli Henson, Commander Kuang Xuan
 LOCATION: K1 Dig Site 1, Crew Quarters, Commander's Quarters
 THREAT DETECT: Level 4, 5, 9, 10—Psychosis [Dangerous], Possible Exotic, Crew Impairment, Protocol Incompliance
-   [REVISED DETECT]: Level 3, 4, 6, 10—Confirmed Exotic, Psychosis [Dangerous], Crew Impairment, Protocol Incompliance
+   [REVISED DETECT]: Level 3, 4, 6, 10—Confirmed Exotic, Psychosis [Dangerous], Crew Impairment, Protocol Incompliance
 THREAT RESPONSE: Audit Exotic Influence, Mirror Files, Recusal Review, Threat Review
-   [REVISED RESPONSE]: Exhibit Record 755, FILE//REPORT TO RASPUTIN
+   [REVISED RESPONSE]: Exhibit Record 755, FILE//REPORT TO RASPUTIN
 
 
 "No! I have to talk to her!"
