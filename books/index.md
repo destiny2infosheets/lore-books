@@ -81,6 +81,7 @@ Download all books as EPUB: [books.zip](https://destiny2infosheets.github.io/lor
  * [The Dark Future](The_Dark_Future.md)
  * [The Dreaming City](The_Dreaming_City.md)
  * [The Forsaken Prince](The_Forsaken_Prince.md)
+ * [The Garden-Way](The_Garden_Way.md)
  * [The Lawless Frontier](The_Lawless_Frontier.md)
  * [The Liar](The_Liar.md)
  * [The Man They Call Cayde](The_Man_They_Call_Cayde.md)
